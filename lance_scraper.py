@@ -31,15 +31,15 @@ def html_scraper(html_list,x):
         price_list = price_scrap(html_string)
 
         try:
-            with open('horas'+str(x)+'.txt','a') as file:
+            with open('./horas/horas'+str(x)+'.txt','a') as file:
                 file.write(str(horas)+'\n')
-            with open('price'+str(x)+'.txt','a') as file:
+            with open('./price/price'+str(x)+'.txt','a') as file:
                 file.write(str(price_list)+'\n')
-            with open('days'+str(x)+'.txt','a') as file:
+            with open('./days/days'+str(x)+'.txt','a') as file:
                 file.write(str(days)+'\n')
-            with open('names'+str(x)+'.txt','a') as file:
+            with open('./names/names'+str(x)+'.txt','a') as file:
                 file.write(str(names_3)+'\n')
-            with open('winner'+str(x)+'.txt','a') as file:
+            with open('./winner/winner'+str(x)+'.txt','a') as file:
                 file.write(str(winner_list)+'\n')
 
         except:
